@@ -1,4 +1,3 @@
-import { Prisma } from "@prisma/client";
 import { auth } from "@/auth";
 import { GitHubService } from "@/services/github";
 import { RCAService } from "@/services/rca";
