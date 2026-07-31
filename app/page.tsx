@@ -257,7 +257,45 @@ export default function RedesignedLandingPage() {
       </nav>
 
       {/* SECTION 1: HERO */}
-      <section className="relative z-10 pt-32 lg:pt-48 pb-24 max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <section className="relative z-10 pt-28 lg:pt-36 pb-24 max-w-7xl mx-auto px-6 flex flex-col items-center">
+        
+        {/* Centered Launch Badges below header */}
+        <motion.div 
+          className="mb-10 flex flex-wrap items-center justify-center gap-4 sm:gap-6"
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+        >
+          <a
+            href="https://www.producthunt.com/products/cori?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-cori"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block transition-transform hover:scale-105 active:scale-95"
+          >
+            <img
+              src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1207200&theme=light&t=1785514982085"
+              alt="CORI - Your Autonomous Reliability Engineer | Product Hunt"
+              width={250}
+              height={54}
+              className="h-[48px] sm:h-[54px] w-auto rounded-lg shadow-lg"
+            />
+          </a>
+          <a
+            href="https://peerlist.io/psjcoder/project/cori"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-block transition-transform hover:scale-105 active:scale-95"
+          >
+            <img
+              src="https://peerlist.io/api/v1/projects/embed/PRJH7B879DKN6NBG8H99OG6LN97J98?showUpvote=true&theme=light"
+              alt="CORI"
+              className="h-[48px] sm:h-[54px] w-auto rounded-lg shadow-lg"
+            />
+          </a>
+        </motion.div>
+
+        {/* Hero Main Grid */}
+        <div className="w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         
         {/* Left Side: Value Prop */}
         <motion.div 
@@ -454,6 +492,7 @@ export default function RedesignedLandingPage() {
             </div>
           </div>
         </motion.div>
+        </div>
 
       </section>
 
