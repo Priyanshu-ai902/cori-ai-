@@ -270,26 +270,26 @@ export default function RedesignedLandingPage() {
             href="https://www.producthunt.com/products/cori?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-cori"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block transition-transform hover:scale-105 active:scale-95"
+            className="inline-block transition-transform hover:scale-105 active:scale-95 flex items-center"
           >
             <img
               src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1207200&theme=light&t=1785514982085"
               alt="CORI - Your Autonomous Reliability Engineer | Product Hunt"
               width={250}
               height={54}
-              className="h-[48px] sm:h-[54px] w-auto rounded-lg shadow-lg"
+              className="h-[50px] sm:h-[54px] w-auto rounded-lg shadow-lg"
             />
           </a>
           <a
             href="https://peerlist.io/psjcoder/project/cori"
             target="_blank"
             rel="noreferrer"
-            className="inline-block transition-transform hover:scale-105 active:scale-95"
+            className="inline-block transition-transform hover:scale-105 active:scale-95 flex items-center"
           >
             <img
               src="https://peerlist.io/api/v1/projects/embed/PRJH7B879DKN6NBG8H99OG6LN97J98?showUpvote=true&theme=light"
               alt="CORI"
-              className="h-[48px] sm:h-[54px] w-auto rounded-lg shadow-lg"
+              className="h-[50px] sm:h-[60px] w-auto rounded-lg shadow-lg"
             />
           </a>
         </motion.div>
